@@ -7,7 +7,9 @@ body{
 a{
     text-decoration:  none;
 }
-
+header{
+    border-bottom: 1px solid #E7E9FC;
+}
 .site{
     font-size: 16px;
     font-weight: 500;
@@ -47,6 +49,9 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 4px;
 }
 .btn:hover, .btn:focus{
     background-color: #404BBF;
@@ -60,8 +65,9 @@ ul{
     color:#4d5ae5;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+
 }
-.withbtn{
+#wthbtn{
     background-color: #2E2F42;
     color:#FFFFFF;
     text-align: center;
@@ -143,4 +149,123 @@ ul{
 }
 .foot .studio{
     color:#f4f4fd;
+}
+/*working with geometry*/
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts {
+    display: flex;
+    gap: 40px;
+}
+header .container{
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+
+#wthbtn .container{
+    display: block;
+    padding: 188px 0;
+}
+.title{
+    margin-bottom: 45px;
+    margin: 0 472px 45px 472px;
+}
+.section{
+    padding: 0 120px;
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+}
+.features li{
+    margin-right: 24px;
+}
+.feat{
+    margin-top: 8px;
+}
+#feats .container{
+    margin-bottom: 120px;
+}
+#team .container{
+    display: block;
+    padding-bottom: 120px;
+}
+.members{
+    display: flex;
+    flex-direction: row;
+    margin-top: 72px;
+}
+.members li{
+    margin-right: 24px;
+    text-align: center;
+    padding-bottom: 32px;
+}
+.name{
+    margin-top: 32px;
+}
+#portfolio .container{
+    display: block;
+    padding-bottom: 120px;
+}
+.portfolios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    padding: 0;
+    margin-top: 72px;
+    pad
+}
+.portfolios li{
+    width: calc((100% - 48px) / 3);
+    padding-bottom: 32px;
+}
+.portname{
+    margin-top: 32px;
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+.description{
+    padding-left: 16px;
+    
+}
+.foot .container{
+    display: block;
+    padding-top: 100px;
+}
+.statement{
+    padding-bottom: 100px ;
+    margin-top: 16px;
+    width: 264px;
 }
