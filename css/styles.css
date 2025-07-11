@@ -7,7 +7,7 @@ body{
 a{
     text-decoration:  none;
 }
-header{
+.top{
     border-bottom: 1px solid #E7E9FC;
 }
 .site{
@@ -16,6 +16,7 @@ header{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#2e2f42;
+    padding: 24px 0 24px;
 }
 .site:hover, .site:focus{
     color:#404bbf;
@@ -52,6 +53,10 @@ ul{
     padding: 16px 32px;
     border: 0;
     border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+   
 }
 .btn:hover, .btn:focus{
     background-color: #404BBF;
@@ -67,7 +72,7 @@ ul{
     letter-spacing: 0.03em;
 
 }
-#wthbtn{
+.wthbtn{
     background-color: #2E2F42;
     color:#FFFFFF;
     text-align: center;
@@ -90,6 +95,7 @@ ul{
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .featname{
     font-size: 20px;
@@ -160,21 +166,24 @@ p {
     padding: 0;
 }
 .container {
-    max-width: 1440px;
+    width: 1158px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding: 0 15px 0 15px;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 76px;
 }
-
+img{
+    display: block;
+}
+.logo{
+    margin-right: 76px;
+}
 .navigation {
     display: flex;
     gap: 40px;
@@ -187,56 +196,77 @@ p {
     display: flex;
     gap: 40px;
 }
-header .container{
+.top .container{
     margin-top: 24px;
     margin-bottom: 25px;
 }
-
-#wthbtn .container{
+.wthbtn{
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+.wthbtn .container{
     display: block;
-    padding: 188px 0;
+    
 }
 .title{
-    margin-bottom: 45px;
-    margin: 0 472px 45px 472px;
+    max-width: 496px;
+    margin:45px auto;
 }
 .section{
-    padding: 0 120px;
+    padding: 120px 0;
 }
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
 .features{
     display: flex;
-    flex-direction: row;
-    padding-top: 120px;
+    gap:24px;
+    /*padding-bottom: 120px;*/
 }
-.features li{
-    margin-right: 24px;
+.featcard{
+    width: calc((100% - 72px) / 4);
 }
-.feat{
-    margin-top: 8px;
+.featname{
+    margin-bottom: 8px;
 }
-#feats .container{
+/*.feats .container{
     margin-bottom: 120px;
-}
-#team .container{
+}*/
+.team .container{
     display: block;
-    padding-bottom: 120px;
+    /*padding-bottom: 120px;*/
 }
 .members{
     display: flex;
     flex-direction: row;
-    margin-top: 72px;
+    gap:24px;
 }
-.members li{
-    margin-right: 24px;
-    text-align: center;
-    padding-bottom: 32px;
+.member{
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
+}
+.names{
+    padding: 32px 0 32px;
 }
 .name{
-    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 8px;
 }
-#portfolio .container{
+.position{
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-weight: 400;
+    color:#434455;
+    text-align: center;
+}
+
+.portfolio .container{
     display: block;
-    padding-bottom: 120px;
+    /*padding-bottom: 120px;*/
 }
 .portfolios{
     display: flex;
