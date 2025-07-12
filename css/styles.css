@@ -200,6 +200,10 @@ img{
     margin-top: 24px;
     margin-bottom: 25px;
 }
+
+.section{
+    padding: 120px 0;
+}
 .wthbtn{
     padding-top: 188px;
     padding-bottom: 188px;
@@ -212,19 +216,26 @@ img{
     max-width: 496px;
     margin:45px auto;
 }
-.section{
-    padding: 120px 0;
-}
+
+
 
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features{
     display: flex;
     gap:24px;
-    /*padding-bottom: 120px;*/
+    
 }
 .featcard{
     width: calc((100% - 72px) / 4);
@@ -232,12 +243,10 @@ img{
 .featname{
     margin-bottom: 8px;
 }
-/*.feats .container{
-    margin-bottom: 120px;
-}*/
+
 .team .container{
     display: block;
-    /*padding-bottom: 120px;*/
+    
 }
 .members{
     display: flex;
@@ -266,7 +275,7 @@ img{
 
 .portfolio .container{
     display: block;
-    /*padding-bottom: 120px;*/
+    
 }
 .portfolios{
     display: flex;
@@ -275,27 +284,30 @@ img{
     gap: 24px;
     padding: 0;
     margin-top: 72px;
-    pad
+    row-gap: 48px;
 }
 .portfolios li{
     width: calc((100% - 48px) / 3);
-    padding-bottom: 32px;
-}
-.portname{
-    margin-top: 32px;
-    margin-bottom: 8px;
-    padding-left: 16px;
-}
-.description{
-    padding-left: 16px;
     
+}
+.descrb{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+.foot{
+    padding: 100px 0 100px;
+}
+.foot .logo{
+    margin-bottom: 16px;
+    display: inline-block;
 }
 .foot .container{
     display: block;
-    padding-top: 100px;
+    
 }
 .statement{
-    padding-bottom: 100px ;
-    margin-top: 16px;
     width: 264px;
 }
