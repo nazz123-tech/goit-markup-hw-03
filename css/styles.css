@@ -157,14 +157,7 @@ ul{
     color:#f4f4fd;
 }
 /*working with geometry*/
-.container{
-    width: 1158px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px 0 15px;
-}
+
 ul,
 h1,
 h2,
@@ -197,7 +190,7 @@ img{
     display: flex;
     gap: 40px;
 }
-.top .container{
+.top {
     margin-top: 24px;
     margin-bottom: 25px;
 }
@@ -312,4 +305,12 @@ img{
 }
 .statement{
     width: 264px;
+}
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
 }
