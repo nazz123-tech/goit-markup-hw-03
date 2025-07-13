@@ -17,6 +17,7 @@ a{
     letter-spacing: 0.02em;
     color:#2e2f42;
     padding: 24px 0 24px;
+    display: block;
 }
 .site:hover, .site:focus{
     color:#404bbf;
@@ -30,7 +31,8 @@ address{
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1.5;
-    
+    display: block;
+    padding: 24px 0 24px;
 }
 .cnt:hover, .cnt:focus{
     color: #404BBF;
@@ -103,6 +105,7 @@ ul{
     line-height: 24px;
     font-weight: 500 ;
     color:#2E2F42;
+    margin-bottom: 8px;
 }
 .feat{
     font-size: 16px;
@@ -117,6 +120,8 @@ ul{
 }
 .member{
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
 }
 .name{
     font-weight: 500;
@@ -133,6 +138,7 @@ ul{
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 
 }
 .description{
@@ -152,6 +158,7 @@ ul{
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 .foot .studio{
     color:#f4f4fd;
@@ -166,7 +173,9 @@ p{
     margin: 0;
     padding: 0;
 }
-
+.top .container{
+    display: flex;;
+}
 
 .header-nav {
     display: flex;
@@ -175,7 +184,7 @@ p{
 img{
     display: block;
 }
-.logo{
+.top .logo{
     margin-right: 76px;
 }
 .navigation {
@@ -190,10 +199,7 @@ img{
     display: flex;
     gap: 40px;
 }
-.top {
-    margin-top: 24px;
-    margin-bottom: 25px;
-}
+
 
 .section{
     padding: 120px 0;
@@ -202,13 +208,10 @@ img{
     padding-top: 188px;
     padding-bottom: 188px;
 }
-.wthbtn .container{
-    display: block;
-    
-}
+
 .title{
     max-width: 496px;
-    margin:45px auto;
+    margin:0 auto 48px;
 }
 
 
@@ -234,23 +237,13 @@ img{
 .featcard{
     width: calc((100% - 72px) / 4);
 }
-.featname{
-    margin-bottom: 8px;
-}
 
-.team .container{
-    display: block;
-    
-}
 .members{
     display: flex;
     flex-direction: row;
     gap:24px;
 }
-.member{
-    border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 72px) / 4);
-}
+
 .names{
     padding: 32px 0 32px;
 }
@@ -267,17 +260,11 @@ img{
     text-align: center;
 }
 
-.portfolio .container{
-    display: block;
-    
-}
+
 .portfolios{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     gap: 24px;
-    padding: 0;
-    margin-top: 72px;
     row-gap: 48px;
 }
 .portfolios li{
@@ -289,9 +276,9 @@ img{
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-.portname{
-    margin-bottom: 8px;
-}
+
+    
+
 .foot{
     padding: 100px 0 100px;
 }
@@ -299,17 +286,13 @@ img{
     margin-bottom: 16px;
     display: inline-block;
 }
-.foot .container{
-    display: block;
-    
-}
-.statement{
-    width: 264px;
-}
+
+  
+
 .container {
     width: 1158px;
     margin: 0 auto;
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px 0 15px;
